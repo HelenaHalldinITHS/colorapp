@@ -9,6 +9,7 @@ import javax.validation.constraints.NotBlank;
 @Introspected
 @ReflectiveAccess
 public class Color {
+
     @NonNull
     @NotBlank
     @BsonProperty("name")
@@ -29,6 +30,7 @@ public class Color {
         this.name = name;
         this.specification = specification;
     }
+
     @NonNull
     public String getName() {
         return name;
